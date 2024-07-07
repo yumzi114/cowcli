@@ -1,0 +1,23 @@
+[package]
+name = "cowbin"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+readme.workspace = true
+license.workspace = true
+
+[dependencies]
+clap = { version = "4.5.8", features = ["derive"] }
+console = "0.15.8"
+crossterm = "0.27.0"
+tokio = {version = "1.7",features = ["full","tracing"]}
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
+sentry = "0.34.0"
+mini-redis = "0.4.1"
+
+
+console-subscriber = "0.1.5"
+futures-util = "0.3.30"
+tokio-tungstenite = {version = "0.23.1",features = ["native-tls"]}
+futures-channel = "0.3.30"
