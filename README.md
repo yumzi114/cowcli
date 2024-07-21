@@ -3,8 +3,9 @@
 
 ```
 [env]
-SOCKETURL = "wss://socketurl"
-SERIAL_DEVICE = "/dev/usb/ttyUSB"
+SOCKETURL=""
+SERIAL_DEVICE=""
+SIZE = "1500:1500"
 
 [build]
 rustflags = ["--cfg", "tokio_unstable"]

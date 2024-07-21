@@ -7,3 +7,5 @@ readme.workspace = true
 license.workspace = true
 
 [dependencies]
+bytes = "1.6.0"
+tokio-util = {version="0.7.11",features=["codec"]}

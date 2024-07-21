@@ -12,12 +12,16 @@ console = "0.15.8"
 crossterm = "0.27.0"
 tokio = {version = "1.7",features = ["full","tracing"]}
 tracing = "0.1.40"
-tracing-subscriber = "0.3.18"
+tracing-subscriber = { version = "0.3.18", features = ["time"] }
 sentry = "0.34.0"
 mini-redis = "0.4.1"
-
+cowapi = {path = "../cowapi"}
 
 console-subscriber = "0.1.5"
 futures-util = "0.3.30"
-tokio-tungstenite = {version = "0.23.1",features = ["native-tls"]}
+tokio-tungstenite = { version = "0.17", features = ["native-tls"] }
 futures-channel = "0.3.30"
+tokio-serial = "5.4.4"
+tokio-util = { version = "0.7.11", features = ["codec"] }
+stream-reconnect = "0.3"
+futures = "0.3"
